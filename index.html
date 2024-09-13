@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&amp;display=swap"
+    rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="ppal">
+    <h1>Juego Adivina el Numero</h1>
+    <p id="subTitle">Intenta adivinar un numero entre 1 y 100</p>
+    <div id="div-interno">
+      <input type="number" id="userInput" min="1" max="100">
+      <button id="enterInput">Enter</button>
+    </div>
+    <p id="success"></p>
+    <p id="hint"></p>
+    <p id="attempts"></p>
+    <button id="reset">Reset</button>
+  </div>
+</body>
+</html>

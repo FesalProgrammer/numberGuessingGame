@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+}
+body{
+  background: url(img/amir-mahdi-_kaKwD5GqEA-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+div{
+  background:url(img/wallpaperPrincipal.jpg);
+  background-repeat: no-repeat;
+  width: auto; 
+  height: 80vh; 
+  margin:50px 50px;
+  /*border: 20px solid #ccffcc;*/
+  border: pink;
+  border-radius: 12 px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+  
+}
+
+#div-interno{
+  width: 200px;
+}
+h1{
+  margin-top: 15px;
+  
+}
+
+#subTitle, p{
+  font-weight: 700;
+  font-size: 1.6rem;
+  
+}
+
+input{
+  background-color: rgb(195, 24, 70);
+  margin-top: 25px;
+  color: white;
+  height: 40px;
+  width: 85px;
+  font-size: large;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 15px;
+}
+button {
+  padding: 10px 22px;
+  background-color: rgb(195, 24, 70);
+  color: #ffffff;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid white;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /* Agregar efecto de botón presionado */
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+  
+} 
+
+/*input[type="number"]{
+  -moz-appearance: textfield;
+  
+}*/
+
+input:focus{
+  outline: none;
+}
+
+#success{
+ animation: mover-izq-der 2s 5; 
+}
+@keyframes mover-izq-der {
+  from{
+    transform: translateX(-65px);
+  }
+  to{
+    transform: translateX(5px);
+  }
+}
+
+#reset{
+  margin-top: 0px 20px 0px 0px;
+}
+
+@media (992px >= width){
+  body{
+    background-position: top;
+  }
+  h1{
+    font-size: 1.4rem;
+  }
+  
+  #subTitle{
+    font-size: 1.1rem;
+    
+  }
+  p{
+    font-size: 1rem;
+  }
+}
